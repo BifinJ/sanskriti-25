@@ -131,7 +131,7 @@ export const Header = () => {
         </p>
         <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
           Nestled on a sun-drenched hillock in Kothamangalam, our college bears the proud 
-          legacy of being Asia's inaugural Christian-managed institution since 1961. 
+          legacy of being Asia&apos;s inaugural Christian-managed institution since 1961. 
           Through Sanskriti, we honor this storied heritage, weaving a tapestry of unity 
           and inspiration through the transcendent language of art.
         </p>
