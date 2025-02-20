@@ -19,14 +19,24 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
       }
     }
 
+    function onPopState() {
+      setActive(false);
+    }
+
     if (active && typeof active === "object") {
       document.body.style.overflow = "hidden";
+      window.history.pushState(null, "", window.location.href); // Prevents immediate back navigation
     } else {
       document.body.style.overflow = "auto";
     }
 
     window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
+    window.addEventListener("popstate", onPopState);
+
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("popstate", onPopState);
+    };
   }, [active]);
 
   useOutsideClick(ref as React.RefObject<HTMLDivElement>, () => setActive(null));
@@ -132,7 +142,7 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="bg-neutral-800 max-w-6xl mx-auto w-full grid grid-cols-1 sm:grid-cols-4 gap-4">
+      <ul className="z-10 bg-neutral-800 max-w-6xl mx-auto w-full grid grid-cols-2 sm:grid-cols-4 gap-4">
         {events.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${card.id}`}
