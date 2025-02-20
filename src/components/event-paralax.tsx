@@ -57,7 +57,7 @@ export const EventParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[210vh] md:h-[230vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[210vh] md:h-[230vh] py-28 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -118,9 +118,9 @@ export const Header = () => {
   ];
 
   return (
-    <div className="z-10 absolute flex flex-col items-center justify-center mx-auto py-20 md:py-40 px-4 w-full">
+    <div className="z-10 absolute flex flex-col items-center justify-center mx-auto py-5 md:py-28 px-4 w-full">
       <div className="max-w-7xl w-full">
-        <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
+        <h1 className="text-5xl md:text-7xl font-bold dark:text-white">
           About<br />Sanskriti&apos;25
         </h1>
         <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
