@@ -144,14 +144,24 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
       </AnimatePresence>
       <ul className="z-10 bg-neutral-800 max-w-6xl mx-auto w-full grid grid-cols-2 sm:grid-cols-4 gap-4">
         {events.map((card) => (
-          <motion.div
+          <motion.div 
             layoutId={`card-${card.title}-${card.id}`}
             key={`card-${card.title}-${card.id}`}
             onClick={() => setActive(card)}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }} // Trigger animation in viewport
+            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }} // Controls when animation triggers
             className="p-4 flex flex-col justify-between items-center bg-neutral-800 hover:bg-neutral-700 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col">
-              <motion.div layoutId={`image-${card.title}-${card.id}`}>
+              <motion.div 
+                layoutId={`image-${card.title}-${card.id}`}
+                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+              >
                 <Image
                   width={100}
                   height={100}
@@ -160,15 +170,23 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
                   className="h-40 w-40 rounded-lg object-cover object-top"
                 />
               </motion.div>
-              <div className="">
+              <div>
                 <motion.h3
                   layoutId={`title-${card.title}-${card.id}`}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.3, delay: 0.2 }}
+                  viewport={{ once: false, amount: 0.2 }}
                   className="font-medium text-neutral-800 dark:text-neutral-200 text-center"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${card.id}`}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.3, delay: 0.3 }}
+                  viewport={{ once: false, amount: 0.2 }}
                   className="text-neutral-600 dark:text-neutral-400 text-center"
                 >
                   {card.description}
@@ -177,6 +195,10 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${card.id}`}
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.3, delay: 0.4 }}
+              viewport={{ once: false, amount: 0.2 }}
               className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-primary text-black mt-4"
             >
               {card.ctaText}
