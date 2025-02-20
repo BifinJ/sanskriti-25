@@ -124,10 +124,16 @@ export const Header = () => {
           About<br />Sanskriti&apos;25
         </h1>
         <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit esse,
-          autem ipsa, earum dolorum blanditiis, iste repellendus voluptas sunt
-          laboriosam quibusdam minima nostrum molestiae quod odio cum eum iure
-          itaque pariatur aut expedita.
+          Sanskriti, the flagship Arts and Cultural festival of Mar Athanasius College 
+          of Engineering, awaits you from 6th, 7th and 8th of March, 2025. This year, 
+          we embark on a journey to uncover the profound narrative of forging timeless 
+          connections through the captivating force of artistry.
+        </p>
+        <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+          Nestled on a sun-drenched hillock in Kothamangalam, our college bears the proud 
+          legacy of being Asia's inaugural Christian-managed institution since 1961. 
+          Through Sanskriti, we honor this storied heritage, weaving a tapestry of unity 
+          and inspiration through the transcendent language of art.
         </p>
       </div>
       

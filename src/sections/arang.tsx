@@ -10,8 +10,8 @@ export default function Arang() {
   const [mode, setMode] = useState(true);
 
   return (
-    <section className="p-20 bg-neutral-800 flex flex-col items-center justify-center">
-        <h1 className=" section-heading !text-primary w-full max-w-7xl">Arang</h1>
+    <section className="p-8 sm:p-12 md:p-20 bg-neutral-800 flex flex-col items-center justify-center">
+        <h1 className=" section-heading !text-center lg:!text-left mb-3 !text-primary w-full max-w-7xl">Arang</h1>
         <div className="my-2 w-full flex justify-center items-center">
           <ShimmerButton
             isActive = {mode}
