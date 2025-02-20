@@ -1,6 +1,7 @@
 import { JSX } from "react";
 
 export interface Events {
+  id: number;
   description: string;
   title: string;
   src: string;
@@ -11,11 +12,12 @@ export interface Events {
 
 export const singleEvents:Events[] = [
   {
+    id: 1,
     description: "6K Prize Pool",
     title: "മോഹിനിയാട്ടം",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://github.com/",
     content: () => {
       return (
         <p>
@@ -34,6 +36,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 2,
     description: "6K Prize Pool",
     title: "ഭരതനാട്യം",
     src: "/images/sanskriti-logo.png",
@@ -57,6 +60,7 @@ export const singleEvents:Events[] = [
   },
 
   {
+    id: 3,
     description: "1.3K Prize Pool",
     title: "Extempore - Malayalam",
     src: "/images/sanskriti-logo.png",
@@ -79,6 +83,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 4,
     description: "1.3K Prize Pool",
     title: "Extempore - English",
     src: "/images/sanskriti-logo.png",
@@ -100,6 +105,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 5,
     description: "6K Prize Pool",
     title: "കുച്ചിപ്പുടി",
     src: "/images/sanskriti-logo.png",
@@ -122,6 +128,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 6,
     description: "1.3K Prize Pool",
     title: "Light Music",
     src: "/images/sanskriti-logo.png",
@@ -144,6 +151,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 7,
     description: "1.3K Prize Pool",
     title: "ശാസ്ത്രീയസംഗീതം",
     src: "/images/sanskriti-logo.png",
@@ -166,6 +174,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 8,
     description: "2K Prize Pool",
     title: "Monoact",
     src: "/images/sanskriti-logo.png",
@@ -188,6 +197,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 9,
     description: "1.3K Prize Pool",
     title: "Anchoring - Malayalam",
     src: "/images/sanskriti-logo.png",
@@ -210,6 +220,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 10,
     description: "1.3K Prize Pool",
     title: "Standup Comedy",
     src: "/images/sanskriti-logo.png",
@@ -232,6 +243,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 11,
     description: "1.3K Prize Pool",
     title: "Western Solo",
     src: "/images/sanskriti-logo.png",
@@ -254,6 +266,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 12,
     description: "1.3K Prize Pool",
     title: "Recitation",
     src: "/images/sanskriti-logo.png",
@@ -276,6 +289,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 13,
     description: "2K Prize Pool",
     title: "Drums",
     src: "/images/sanskriti-logo.png",
@@ -298,6 +312,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 14,
     description: "1.3K Prize Pool",
     title: "Guitar",
     src: "/images/sanskriti-logo.png",
@@ -320,6 +335,7 @@ export const singleEvents:Events[] = [
     },
   },
   {
+    id: 15,
     description: "1.3K Prize Pool",
     title: "Flute",
     src: "/images/sanskriti-logo.png",
@@ -346,6 +362,7 @@ export const singleEvents:Events[] = [
 
 export const groupEvents:Events[] = [
   {
+    id: 1,
     description: "8K Prize Pool",
     title: "Group Dance",
     src: "/images/sanskriti-logo.png",
@@ -369,6 +386,7 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 2,
     description: "5K Prize Pool",
     title: "തിരുവാതിര",
     src: "/images/sanskriti-logo.png",
@@ -392,6 +410,7 @@ export const groupEvents:Events[] = [
   },
 
   {
+    id: 3,
     description: "10K Prize Pool",
     title: "ഒപ്പന",
     src: "/images/sanskriti-logo.png",
@@ -414,6 +433,7 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 4,
     description: "5K Prize Pool",
     title: "Group Song",
     src: "/images/sanskriti-logo.png",
@@ -435,6 +455,7 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 5,
     description: "10K Prize Pool",
     title: "മാർഗ്ഗംകളി",
     src: "/images/sanskriti-logo.png",
@@ -457,6 +478,7 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 6,
     description: "6K Prize Pool",
     title: "നടൻപാട്ട്",
     src: "/images/sanskriti-logo.png",
@@ -479,6 +501,7 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 7,
     description: "8K Prize Pool",
     title: "വഞ്ചിപ്പാട്ട്",
     src: "/images/sanskriti-logo.png",
@@ -501,6 +524,7 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 8,
     description: "10K Prize Pool",
     title: "ദഫ് മുട്ട്",
     src: "/images/sanskriti-logo.png",
@@ -523,6 +547,7 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 9,
     description: "10K Prize Pool",
     title: "കോൽക്കളി",
     src: "/images/sanskriti-logo.png",
@@ -545,6 +570,7 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 10,
     description: "8K Prize Pool",
     title: "Mime",
     src: "/images/sanskriti-logo.png",
@@ -567,6 +593,7 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 11,
     description: "8K Prize Pool",
     title: "Spoof",
     src: "/images/sanskriti-logo.png",

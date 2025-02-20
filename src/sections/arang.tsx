@@ -18,7 +18,7 @@ export default function Arang() {
             onClick={() => setMode(true)}
             borderRadius="0.675rem 0 0 0.675rem"
           >
-            Single Events
+            Individual Events
           </ShimmerButton>
           <ShimmerButton
             isActive = {!mode}

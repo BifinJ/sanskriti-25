@@ -1,16 +1,16 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useId, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { Events } from "@/data/events";
+import Modal from "./checkClgModal";
 
 export function ExpandableCardArang({events} : {events : Events[]}) {
   const [active, setActive] = useState<(typeof events)[number] | boolean | null>(
     null
   );
   const ref = useRef<HTMLDivElement>(null);
-  const id = useId();
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -31,6 +31,10 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
 
   useOutsideClick(ref as React.RefObject<HTMLDivElement>, () => setActive(null));
 
+  // MACEian and Non-MACEian Modal
+  const [ isModalOpen, setIsModalOpen ] = useState(false)
+  const [ link, setLink ] = useState("")
+
   return (
     <>
       <AnimatePresence>
@@ -47,7 +51,7 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
         {active && typeof active === "object" ? (
           <div className="fixed inset-0  grid place-items-center z-[100]">
             <motion.button
-              key={`button-${active.title}-${id}`}
+              key={`button-${active.title}-${active.id}`}
               layout
               initial={{
                 opacity: 0,
@@ -67,18 +71,18 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
               <CloseIcon />
             </motion.button>
             <motion.div
-              layoutId={`card-${active.title}-${id}`}
+              layoutId={`card-${active.title}-${active.id}`}
               ref={ref}
               className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
-              <motion.div layoutId={`image-${active.title}-${id}`}>
+              <motion.div layoutId={`image-${active.title}-${active.id}`}>
                 <Image
                   priority
                   width={200}
                   height={200}
                   src={active.src}
                   alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-contain object-top"
                 />
               </motion.div>
 
@@ -86,27 +90,29 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
                 <div className="flex justify-between items-start p-4">
                   <div className="">
                     <motion.h3
-                      layoutId={`title-${active.title}-${id}`}
+                      layoutId={`title-${active.title}-${active.id}`}
                       className="font-bold text-neutral-700 dark:text-neutral-200"
                     >
                       {active.title}
                     </motion.h3>
                     <motion.p
-                      layoutId={`description-${active.description}-${id}`}
+                      layoutId={`description-${active.description}-${active.id}`}
                       className="text-neutral-600 dark:text-neutral-400"
                     >
                       {active.description}
                     </motion.p>
                   </div>
 
-                  <motion.a
-                    layoutId={`button-${active.title}-${id}`}
-                    href={active.ctaLink}
-                    target="_blank"
+                  <motion.button
+                    layoutId={`button-${active.title}-${active.id}`}
+                    onClick={() => {
+                      setIsModalOpen(true)
+                      setLink(active.ctaLink)
+                    }}
                     className="px-4 py-3 text-sm rounded-full font-bold bg-primary text-black"
                   >
                     {active.ctaText}
-                  </motion.a>
+                  </motion.button>
                 </div>
                 <div className="pt-4 relative px-4">
                   <motion.div
@@ -129,13 +135,13 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
       <ul className="bg-neutral-800 max-w-6xl mx-auto w-full grid grid-cols-1 sm:grid-cols-4 gap-4">
         {events.map((card) => (
           <motion.div
-            layoutId={`card-${card.title}-${id}`}
-            key={`card-${card.title}-${id}`}
+            layoutId={`card-${card.title}-${card.id}`}
+            key={`card-${card.title}-${card.id}`}
             onClick={() => setActive(card)}
             className="p-4 flex flex-col justify-between items-center bg-neutral-800 hover:bg-neutral-700 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col">
-              <motion.div layoutId={`image-${card.title}-${id}`}>
+              <motion.div layoutId={`image-${card.title}-${card.id}`}>
                 <Image
                   width={100}
                   height={100}
@@ -146,13 +152,13 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
               </motion.div>
               <div className="">
                 <motion.h3
-                  layoutId={`title-${card.title}-${id}`}
+                  layoutId={`title-${card.title}-${card.id}`}
                   className="font-medium text-neutral-800 dark:text-neutral-200 text-center"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
-                  layoutId={`description-${card.description}-${id}`}
+                  layoutId={`description-${card.description}-${card.id}`}
                   className="text-neutral-600 dark:text-neutral-400 text-center"
                 >
                   {card.description}
@@ -160,7 +166,7 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
               </div>
             </div>
             <motion.button
-              layoutId={`button-${card.title}-${id}`}
+              layoutId={`button-${card.title}-${card.id}`}
               className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-primary text-black mt-4"
             >
               {card.ctaText}
@@ -168,6 +174,11 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
           </motion.div>
         ))}
       </ul>
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)}
+        link={link}       
+      />
     </>
   );
 }
