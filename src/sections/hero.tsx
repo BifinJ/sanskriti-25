@@ -7,7 +7,7 @@ export default function Hero() {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // Adjust speed (0.5 = half speed, 2 = double speed)
+      videoRef.current.playbackRate = 0.2; // Adjust speed (0.5 = half speed, 2 = double speed)
     }
   }, []);
 
