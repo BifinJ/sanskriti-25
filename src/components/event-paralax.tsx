@@ -103,12 +103,12 @@ export const EventParallax = ({
 
 export const Header = () => {
   const events = [
-    { name: "Music Fest", src: "https://sanskritimace.in/images/p1.jpg" },
-    { name: "Art Expo", src: "https://sanskritimace.in/images/p2.webp" },
-    { name: "Tech Talk", src: "https://sanskritimace.in/images/p3.jpg" },
-    { name: "Dance Show", src: "https://sanskritimace.in/images/p4.webp" },
-    { name: "Food Carnival", src: "https://sanskritimace.in/images/p5.jpg" },
-    { name: "Fashion Parade", src: "https://sanskritimace.in/images/p6.webp" },
+    { name: "Music Fest", src: "/Events/1.jpg" },
+    { name: "Art Expo", src: "/Events/2.JPG" },
+    { name: "Tech Talk", src: "/Events/3.jpg" },
+    { name: "Dance Show", src: "/Events/4.JPG" },
+    { name: "Food Carnival", src: "/Events/5.JPG" },
+    { name: "Fashion Parade", src: "/Events/6.JPG" },
   ];
 
   const rotations = [
@@ -148,9 +148,9 @@ export const Header = () => {
               alt={event.name}
               className="w-full h-full object-cover rounded-lg"
             />
-            <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
+            {/* <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
               {event.name}
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
@@ -182,8 +182,7 @@ export const ProductCard = ({
       key={product.title}
       className="group/product h-72 sm:h-96 w-96 sm:w-[30rem] relative flex-shrink-0"
     >
-      <Link
-        href={product.link}
+      <div
         className="block group-hover/product:shadow-2xl "
       >
         <Image
@@ -193,11 +192,8 @@ export const ProductCard = ({
           className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
         />
-      </Link>
+      </div>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
-      </h2>
     </motion.div>
   );
 };
