@@ -16,7 +16,7 @@ export default function Hero() {
       {/* Background Video */}
       <video
         ref={videoRef}
-        src={require("../../public/hero_bg.mp4")}
+        src="/hero_bg.mp4"
         autoPlay 
         loop 
         muted 
