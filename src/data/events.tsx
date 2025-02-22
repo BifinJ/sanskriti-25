@@ -39,7 +39,7 @@ export const singleEvents:Events[] = [
     id: 2,
     description: "6K Prize Pool",
     title: "ഭരതനാട്യം",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/bharathanatyam.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -63,7 +63,7 @@ export const singleEvents:Events[] = [
     id: 3,
     description: "1.3K Prize Pool",
     title: "Extempore - Malayalam",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/extempore_malayalam.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -86,7 +86,7 @@ export const singleEvents:Events[] = [
     id: 4,
     description: "1.3K Prize Pool",
     title: "Extempore - English",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/extempore_english.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -108,7 +108,7 @@ export const singleEvents:Events[] = [
     id: 5,
     description: "6K Prize Pool",
     title: "കുച്ചിപ്പുടി",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/kuchipudi.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -131,7 +131,7 @@ export const singleEvents:Events[] = [
     id: 6,
     description: "1.3K Prize Pool",
     title: "Light Music",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/light_music.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -154,7 +154,7 @@ export const singleEvents:Events[] = [
     id: 7,
     description: "1.3K Prize Pool",
     title: "ശാസ്ത്രീയസംഗീതം",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/shastryasangeedham.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -200,7 +200,7 @@ export const singleEvents:Events[] = [
     id: 9,
     description: "1.3K Prize Pool",
     title: "Anchoring - Malayalam",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/anchoring.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -223,7 +223,7 @@ export const singleEvents:Events[] = [
     id: 10,
     description: "1.3K Prize Pool",
     title: "Standup Comedy",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/stand_up_comedy.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -246,7 +246,7 @@ export const singleEvents:Events[] = [
     id: 11,
     description: "1.3K Prize Pool",
     title: "Western Solo",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/western_solo.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -292,7 +292,7 @@ export const singleEvents:Events[] = [
     id: 13,
     description: "2K Prize Pool",
     title: "Drums",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/drums.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -315,7 +315,7 @@ export const singleEvents:Events[] = [
     id: 14,
     description: "1.3K Prize Pool",
     title: "Guitar",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/guitar.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -338,7 +338,7 @@ export const singleEvents:Events[] = [
     id: 15,
     description: "1.3K Prize Pool",
     title: "Flute",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/flute.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -365,7 +365,7 @@ export const groupEvents:Events[] = [
     id: 1,
     description: "8K Prize Pool",
     title: "Group Dance",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/group_dance.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -389,7 +389,7 @@ export const groupEvents:Events[] = [
     id: 2,
     description: "5K Prize Pool",
     title: "തിരുവാതിര",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/thiruvathira.png",
     ctaText: "Register",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
