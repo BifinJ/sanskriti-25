@@ -111,6 +111,12 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
                     >
                       {active.description}
                     </motion.p>
+                    <motion.p
+                      layoutId={`reg_fees-${active.reg_fees}-${active.id}`}
+                      className="text-neutral-600 dark:text-neutral-400"
+                    >
+                      Reg Fees: <span className=" text-primary">{active.reg_fees}</span>
+                    </motion.p>
                   </div>
 
                   <motion.button
@@ -130,11 +136,9 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-60 max-h-60 md:h-80 md:max-h-80 pb-10 flex flex-col items-start gap-4 overflow-y-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
-                    {typeof active.content === "function"
-                      ? active.content()
-                      : active.content}
+                    {typeof active.content === "function" ? active.content() : active.content}
                   </motion.div>
                 </div>
               </div>

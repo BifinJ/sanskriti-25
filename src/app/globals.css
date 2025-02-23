@@ -29,3 +29,9 @@
   font-size: 5rem;
   line-height: 1;
 }
+
+ul{
+  list-style-type: decimal;
+  list-style-position: inside;
+  overflow-y: scroll;
+}

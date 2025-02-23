@@ -1,105 +1,97 @@
-import { EventParallax } from "@/components/event-paralax";
+"use client"
+
+import { main_events } from "@/data/events";
+import { AnimatePresence, motion } from "framer-motion";
+import { useRef } from "react";
 
 export default function Events() {
+  
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Framer Motion Variants for Typing Effect
+  const typingVariants = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1, // Delay each letter
+      },
+    },
+  };
+
+  const letterVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
-    <section className=" bg-black">
-        <EventParallax products={products} />
-    </section>
+    <AnimatePresence>
+      <section 
+        className="flex flex-col justify-start w-full bg-neutral-900 text-primary min-h-[200dvh]"
+        ref={ref}
+      >
+        <h1 className=" section-heading !text-left !text-primary p-3">Events</h1>
+        {main_events.map((event, index) => (
+          <motion.div 
+            key={index} 
+            initial={{ padding: "4rem", height: "350px"}}
+            whileInView={{ padding: "0rem", height: "fit" }} 
+            exit={{ padding: "4rem", height: "350px" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: false, amount: 1 }}
+            className="bg-neutral-900 overflow-y-hidden"
+          >
+            <motion.div 
+              initial={{ padding: "4.75rem"}}
+              whileInView={{ padding: "4.75rem"}} 
+              exit={{ padding: "4.75rem" }}
+              transition={{ duration: 0, ease: "easeInOut" }}
+              viewport={{ once: false, amount: 1 }}
+              className={`flex ${index % 2 == 0 ? "flex-row": "flex-row-reverse"} items-center h-[350px] bg-neutral-700`}
+            >
+              <div className="w-[34%] flex items-center justify-center">
+                <img src={event.event_image} alt="" className="w-96" />
+              </div>
+              <div className="w-[66%] flex flex-col gap-3">
+                {/* Typing Effect for h1 using motion */}
+                <motion.h1 
+                  className="font-bold text-5xl flex"
+                  variants={typingVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false }}
+                >
+                  {event.event_name.split("").map((letter, index) => (
+                    <motion.span key={index} variants={letterVariants}>
+                      {letter}
+                    </motion.span>
+                  ))}
+                </motion.h1>
+
+                {/* Full paragraph appearing gradually */}
+                <motion.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
+                  viewport={{ once: true }}
+                  className="text-white"
+                >
+                  {event.event_description}
+                </motion.p>
+                {index == 0 ? 
+                  (<a 
+                    href={event.event_link} 
+                    className="w-fit text-neutral-900 border border-primary px-4 py-2 rounded-lg transition-all duration-300 bg-primary hover:bg-neutral-900 hover:text-primary"
+                  >
+                    Know More
+                  </a>
+                  ): 
+                  (<></>)}
+              </div>
+            </motion.div>
+          </motion.div>
+        ))}
+      </section>
+    </AnimatePresence>
   )
 }
-
-export const products = [
-  {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
- 
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
- 
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
- 
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "/images/sanskriti-logo.png",
-  },
-];
