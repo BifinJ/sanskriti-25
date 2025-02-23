@@ -2,11 +2,17 @@
 
 import { main_events } from "@/data/events";
 import { AnimatePresence, motion } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Events() {
   
   const ref = useRef<HTMLDivElement>(null);
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  useEffect(() => {
+    if(window.innerWidth < 768)
+      setIsSmallScreen(true);
+  })
 
   // Framer Motion Variants for Typing Effect
   const typingVariants = {
@@ -34,35 +40,30 @@ export default function Events() {
         {main_events.map((event, index) => (
           <motion.div 
             key={index} 
-            initial={{ padding: "4rem", height: "350px"}}
-            whileInView={{ padding: "0rem", height: "fit" }} 
-            exit={{ padding: "4rem", height: "350px" }}
+            initial={isSmallScreen? { padding: "2rem", height: "800px"} : { padding: "4rem", height: "350px"}}
+            whileInView={isSmallScreen? { padding: "0rem", height: "800px"} : { padding: "0rem", height: "350px"}}
+            exit={isSmallScreen ? { padding: "2rem", height: "800px" } : { padding: "4rem", height: "350px" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             viewport={{ once: false, amount: 1 }}
             className="bg-neutral-900 overflow-y-hidden"
           >
             <motion.div 
-              initial={{ padding: "4.75rem"}}
-              whileInView={{ padding: "4.75rem"}} 
-              exit={{ padding: "4.75rem" }}
-              transition={{ duration: 0, ease: "easeInOut" }}
-              viewport={{ once: false, amount: 1 }}
-              className={`flex ${index % 2 == 0 ? "flex-row": "flex-row-reverse"} items-center h-[350px] bg-neutral-700`}
+              className={`flex flex-col ${index % 2 == 0 ? "md:flex-row": "md:flex-row-reverse"} items-center h-fit md:h-[350px] bg-neutral-700 p-2 md:p-16`}
             >
-              <div className="w-[34%] flex items-center justify-center">
+              <div className="w-1/2 md:w-[34%] flex items-center justify-center">
                 <img src={event.event_image} alt="" className="w-96" />
               </div>
-              <div className="w-[66%] flex flex-col gap-3">
+              <div className="w-full p-1 md:w-[66%] flex flex-col gap-3">
                 {/* Typing Effect for h1 using motion */}
                 <motion.h1 
-                  className="font-bold text-5xl flex"
+                  className="font-bold text-2xl md:text-5xl flex text-center md:text-left"
                   variants={typingVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: false }}
                 >
                   {event.event_name.split("").map((letter, index) => (
-                    <motion.span key={index} variants={letterVariants}>
+                    <motion.span className="  text-center md:text-left" key={index} variants={letterVariants}>
                       {letter}
                     </motion.span>
                   ))}
