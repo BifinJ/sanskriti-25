@@ -123,16 +123,18 @@ export const Header = () => {
           About<br />Sanskriti&apos;25
         </h1>
         <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-          Sanskriti, the flagship Arts and Cultural festival of Mar Athanasius College 
-          of Engineering, awaits you from 6th, 7th and 8th of March, 2025. This year, 
-          we embark on a journey to uncover the profound narrative of forging timeless 
-          connections through the captivating force of artistry.
-        </p>
-        <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-          Nestled on a sun-drenched hillock in Kothamangalam, our college bears the proud 
-          legacy of being Asia&apos;s inaugural Christian-managed institution since 1961. 
-          Through Sanskriti, we honor this storied heritage, weaving a tapestry of unity 
-          and inspiration through the transcendent language of art.
+          Sanskriti&apos;25 is more than an arts fest—it&apos;s a movement, a melting pot of 
+          creativity, and a pulse of inspiration at Mar Athanasius College of Engineering. 
+          Here, tradition collides with innovation, and every brushstroke, beat, and 
+          performance tells a story waiting to be heard. From electrifying stage acts 
+          and soul-stirring melodies to immersive art showcases and thought-provoking 
+          cinema, Sanskriti&apos;25 transforms the ordinary into the extraordinary. It&apos;s 
+          where dancers move to the rhythm of passion, filmmakers capture time in 
+          frames, and artists bring imagination to life. Beyond the spectacle, a 
+          thriving creative community create an atmosphere brimming with energy and 
+          expression. This is more than an event—it&apos;s an experience, a legacy in the 
+          making, and a call to every dreamer, creator, and storyteller. Step into 
+          Sanskriti&apos;25—where art breathes, culture thrives, and inspiration knows no bounds.
         </p>
       </div>
       

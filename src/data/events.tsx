@@ -715,28 +715,28 @@ export const groupEvents:Events[] = [
 export const main_events = [
   {
     event_name: "Arang",
-    event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/Arang/Group/",
+    event_description: "Step into the vibrant world of Arangu, where art knows no bounds. This VIBRANT EXTRAVAGANZA celebrates the perfect blend of traditional and contemporary art forms. Imagine a rich tapestry of music, dance, theater, and visual arts, woven together to create an unforgettable experience. From classical performances that showcase our cultural heritage to modern masterpieces that push the boundaries of creativity, Arangu is a true celebration of artistic expression. Experience the magic of Arangu, where tradition and innovation converge. This spectacular event brings together the best of classical and contemporary art forms, creating a unique and unforgettable experience. Witness the timeless beauty of traditional music, dance, and theater, alongside modern masterpieces that showcase the latest trends and innovations. With its diverse range of performances and exhibitions, Arangu is a true celebration of artistic excellence and creativity.",
+    event_image: "/images/sanskriti-logo.png",
     event_link: "/arang"
   },
   {
     event_name: "Alai",
-    event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/Arang/Group/",
+    event_description: "Step into the enchanting realm of Alai, where creativity flows like waves, blending diverse artistic expressions into a vibrant celebration. More than just an event, Alai is a source of artistic inspiration, featuring everything from mesmerizing paintings to captivating performances that push creative boundaries. The Alai Shows provide an intimate platform for talent, connecting emerging and seasoned artists while redefining artistic exploration. Adding to its unique charm, The Alai Flea—a seaside thrift market—offers a treasure trove of affordable finds, premium stalls, and delectable treats. Alai stands as a tribute to the beauty of art and thrift culture—join us to ride the waves of creativity and uncover hidden talents!",
+    event_image: "/images/sanskriti-logo.png",
   },
   {
     event_name: "ProShow",
     event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/Arang/Group/",
+    event_image: "/images/sanskriti-logo.png",
   },
   {
     event_name: "Jalakam",
-    event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/Arang/Group/",
+    event_description: "Sanskriti is a celebration of art, passion, and togetherness, and Jaalakam is where its purest form comes to life. A space where creativity knows no bounds, Jaalakam brings forth talents that inspire and stories that touch the heart. It is a tribute to those whose spirit and joy make them special from others. This year, as they step onto the stage of Sanskriti, they remind us that art is not just about talent but about connection, about seeing the beauty in every smile, every moment, and every soul.",
+    event_image: "/images/sanskriti-logo.png",
   },
   {
     event_name: "Drishyam",
-    event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/Arang/Group/",
+    event_description: "Step into the world of cinema at Sanskriti'25, where Drishyam serves as a time capsule, preserving moments through the magic of film. From the nostalgia of monochrome classics to the vibrancy of contemporary storytelling and the possibilities of the future, Drishyam showcases the power of film to capture cultural snapshots across time. Watch as storytellers bridge generations, using black-and-white frames to honor the past, embrace the present, and envision the future. More than just a film festival, Drishyam is a living archive—an immersive journey through history, the present moment, and the endless possibilities ahead.",
+    event_image: "/images/sanskriti-logo.png",
   },
 ]
