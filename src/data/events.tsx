@@ -8,7 +8,7 @@ export interface Events {
   src: string;
   ctaText: string;
   non_mace_link: string;
-  mace_link: "";
+  mace_link: string;
   content: () => JSX.Element;
 }
 
@@ -18,10 +18,10 @@ export const singleEvents:Events[] = [
     description: "6K Prize Pool",
     title: "മോഹിനിയാട്ടം",
     reg_fees: "Rs. 150/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/mohiniyattam.jpg",
     ctaText: "Register",
-    non_mace_link: "https://github.com/",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/VSXVxmp96D1TPYqf6",
+    mace_link: "https://forms.gle/yBbWauXVdhifWtD9A",
     content: () => {
       return (
         <ul>
@@ -41,8 +41,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 150/-",
     src: "/Arang/Individual/bharathanatyam.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/jYpg2zFjZVYrPY2W6",
+    mace_link: "https://forms.gle/8fVjJZ8q8p9os8ERA",
     content: () => {
       return (
         <ul>
@@ -63,8 +63,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/extempore_malayalam.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/5NUKHtjPskQwNNbs7",
+    mace_link: "https://forms.gle/rV12n97xfdtQXKQh8",
     content: () => {
       return (
         <ul>
@@ -86,8 +86,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/extempore_english.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/VbymMvCCVwEdUqeRA",
+    mace_link: "https://forms.gle/d4xJHBC5AU1KwKWB6",
     content: () => {
       return (
         <ul>
@@ -109,8 +109,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 150/-",
     src: "/Arang/Individual/kuchipudi.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/TJSa8FA99wvU3Drx9",
+    mace_link: "https://forms.gle/rHnFyfYu4Fc1CAN88",
     content: () => {
       return (
         <ul>
@@ -130,8 +130,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/light_music.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/P718Z1BZ6gfqJ8MHA",
+    mace_link: "https://forms.gle/vH7L3awXz4DLVrTe9",
     content: () => {
       return (
         <ul>
@@ -154,8 +154,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/shastryasangeedham.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/Vd71U2PXiDWdT6HZ6",
+    mace_link: "https://forms.gle/VVJW5ePcVMZqG9cHA",
     content: () => {
       return (
         <ul>
@@ -177,8 +177,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/Mono_Act.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/eqPZFe36zoimYVSh6",
+    mace_link: "https://forms.gle/CNJYBqv5BjiLvSue7",
     content: () => {
       return (
         <ul>
@@ -197,8 +197,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/anchoring.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/hEUvszLRhvUx5ajQ9",
+    mace_link: "https://forms.gle/JrEiXDrZxsGLM2vP7",
     content: () => {
       return (
         <ul>
@@ -220,8 +220,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/stand_up_comedy.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/35EqqSgVKXxhXAwQ6",
+    mace_link: "https://forms.gle/o48b9UmTa79Tc19x8",
     content: () => {
       return (
         <ul>
@@ -240,8 +240,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/western_solo.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/PDZPdCkvG73qGrrz5",
+    mace_link: "https://forms.gle/W2SzwUKFAh4SX4ot5",
     content: () => {
       return (
         <ul>
@@ -260,10 +260,10 @@ export const singleEvents:Events[] = [
     description: "1K Prize Pool",
     title: "Recitation - English",
     reg_fees: "Rs. 100/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Individual/Recitation-english.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/1NuDN2jACBEgUN4T9",
+    mace_link: "https://forms.gle/ePnR8EGpERPPRCxG7",
     content: () => {
       return (
         <ul>
@@ -284,8 +284,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/recitation-malayalam.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/p6VV2rAi19sh46cEA",
+    mace_link: "https://forms.gle/Nq6M8v3YUi2osij56",
     content: () => {
       return (
        <ul>
@@ -304,10 +304,10 @@ export const singleEvents:Events[] = [
     description: "1K Prize Pool",
     title: "Mappilappattu",
     reg_fees: "Rs. 100/-",
-    src: "/Arang/Individual/drums.png",
+    src: "/Arang/Individual/mappilapattu.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/sL8yFVoYhuRaT5gC6",
+    mace_link: "https://forms.gle/DBnnSj5m4VCkdQSx8",
     content: () => {
       return (
         <ul>
@@ -329,8 +329,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/drums.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/STCmT3qvAAbkSnS99",
+    mace_link: "https://forms.gle/c5RES8XRQj1y7a2r5",
     content: () => {
       return (
         <ul>
@@ -348,10 +348,10 @@ export const singleEvents:Events[] = [
     description: "1K Prize Pool",
     title: "String Solo",
     reg_fees: "Rs. 100/-",
-    src: "/Arang/Individual/flute.png",
+    src: "/Arang/Individual/string-solo.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/XNiL4ubCMxL5YBiN7",
+    mace_link: "https://forms.gle/SsdnApPUoC5teAy2A",
     content: () => {
       return (
         <ul>
@@ -383,8 +383,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/flute.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/opD3wc1FfxAWViV57",
+    mace_link: "https://forms.gle/bPUBv7oWAttXf4o88",
     content: () => {
       return (
         <ul>
@@ -413,12 +413,12 @@ export const groupEvents:Events[] = [
   {
     id: 1,
     description: "6K Prize Pool",
-    title: "Group Dance",
+    title: "Group Dance Cenematic",
     reg_fees: "Rs. 600/-",
     src: "/Arang/Group/group_dance.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/QFzkqJ9v4Tzvcuo66",
+    mace_link: "https://forms.gle/TnEog1UuokCtgPCv8",
     content: () => {
       return (
         <ul>
@@ -442,8 +442,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 800/-",
     src: "/Arang/Group/thiruvathira.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/nP485ufafbdXWZUj6",
+    mace_link: "https://forms.gle/391Cobw12VxnwipKA",
     content: () => {
       return (
         <ul>
@@ -474,10 +474,10 @@ export const groupEvents:Events[] = [
     description: "8K Prize Pool",
     title: "ഒപ്പന",
     reg_fees: "Rs. 800/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/Oppana.jpg",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/F132Z3xZy15c5afN8",
+    mace_link: "https://forms.gle/58ayGfpdUAKyy7vF6",
     content: () => {
       return (
         <ul>
@@ -495,12 +495,12 @@ export const groupEvents:Events[] = [
   {
     id: 4,
     description: "6K Prize Pool",
-    title: "Group Song",
+    title: "Sangagaanam",
     reg_fees: "Rs. 600/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/group_song.jpg",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/nqhdwWfGKcGU86TEA",
+    mace_link: "https://forms.gle/wHX1b2AAiuMJMWfJ7",
     content: () => {
       return (
         <ul>
@@ -522,10 +522,10 @@ export const groupEvents:Events[] = [
     description: "8K Prize Pool",
     title: "മാർഗ്ഗംകളി",
     reg_fees: "Rs. 800/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/margamkali.webp",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/daR9wCPdwt4nC3fu6",
+    mace_link: "https://forms.gle/13gLLtRKpWG8KL4Y7",
     content: () => {
       return (
         <ul>
@@ -545,10 +545,10 @@ export const groupEvents:Events[] = [
     description: "6K Prize Pool",
     title: "നടൻപാട്ട്",
     reg_fees: "Rs. 600/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/HZKvepAnsaBnrCTJ9",
+    mace_link: "https://forms.gle/XxGjcquLikkkbgP38",
     content: () => {
       return (
         <ul>
@@ -569,10 +569,10 @@ export const groupEvents:Events[] = [
     description: "6K Prize Pool",
     title: "വഞ്ചിപ്പാട്ട്",
     reg_fees: "Rs. 600/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/vanjipattu.jpg",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/oAVWeS1u6ibuxqLP9",
+    mace_link: "https://forms.gle/JJpXiC7DWL5Fkz6FA",
     content: () => {
       return (
         <ul>
@@ -592,10 +592,10 @@ export const groupEvents:Events[] = [
     description: "8K Prize Pool",
     title: "ദഫ് മുട്ട്",
     reg_fees: "Rs. 800/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/Duffmuttu.jpg",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/RYE7oMhpkAHV8Qf19",
+    mace_link: "https://forms.gle/pU9WuDv2otNa44Qh6",
     content: () => {
       return (
         <ul>
@@ -614,10 +614,10 @@ export const groupEvents:Events[] = [
     description: "8K Prize Pool",
     title: "കോൽക്കളി",
     reg_fees: "Rs. 800/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/Kolkali.jpg",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/U7hcW4sy3RQHfZLL6",
+    mace_link: "https://forms.gle/8UwWhzF3abkz88MC7",
     content: () => {
       return (
         <ul>
@@ -636,10 +636,10 @@ export const groupEvents:Events[] = [
     description: "6K Prize Pool",
     title: "Mime",
     reg_fees: "Rs. 600/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/Mime.png",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/Qv8ggu89v8Ny5sYH6",
+    mace_link: "https://forms.gle/dWrfYverej4zderG7",
     content: () => {
       return (
         <ul>
@@ -658,10 +658,10 @@ export const groupEvents:Events[] = [
     description: "8K Prize Pool",
     title: "Spoof",
     reg_fees: "Rs. 800/-",
-    src: "/images/sanskriti-logo.png",
+    src: "/Arang/Group/spoof.jpg",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/CG8oGUrWReHVNjwo9",
+    mace_link: "https://forms.gle/FjKVsRkxcPYd8Z5k8",
     content: () => {
       return (
         <ul>
@@ -683,26 +683,28 @@ export const groupEvents:Events[] = [
   },
   {
     id: 12,
-    description: "4K Prize Pool",
-    title: "Sangagaanam(Malayalam)",
-    reg_fees: "Rs. 400/-",
-    src: "/images/sanskriti-logo.png",
+    description: "8K Prize Pool",
+    title: "Group Dance - Semi Classical",
+    reg_fees: "Rs. 800/-",
+    src: "/Arang/Group/",
     ctaText: "Register",
-    non_mace_link: "https://ui.aceternity.com/templates",
-    mace_link: "",
+    non_mace_link: "https://forms.gle/5uh7AzGLkrDkRB3F9",
+    mace_link: "https://forms.gle/4NwB9kC1gxoJ1Kc39",
     content: () => {
       return (
         <ul>
           <li>Participation is open to all engineering colleges.</li>
-          <li>A total time of 10 minutes will be provided.</li>
-          <li>Maximum 7 participants.</li>
-          <li>Use of instruments is not permitted.</li>
-          <li>Sruthi box can be used.</li>
-          <li>All regional languages are allowed.</li>
-          <li>Film songs are not allowed.</li>
-          <li>Fusion of songs is allowed.</li>
-          <li>Judgment will be based on talam, sruthi, layam, overall performance, and team coordination.</li>
-          <li>Decisions of the judges will be final and cannot be appealed.</li>
+          <li>Maximum of 12 members are allowed per team.</li>
+          <li>Time limit: 10 minutes, empty to empty.</li>
+          <li>Props and costumes are allowed.</li>
+          <li>Points will be awarded on the basis of overall performance, which includes acting skills, script, dialogue delivery, presentation, and other factors.</li>
+          <li>Extra points shall be awarded for costumes.</li>
+          <li>Characters can be from any number of movies. Scene elements from other movies can also be included.</li>
+          <li>Character portrayal, twists, and humor carry additional weightage.</li>
+          <li>Backstage narration (live/recorded) is allowed.</li>
+          <li>Background music is permitted.</li>
+          <li>Plagiarism of any sort will lead to immediate disqualification. Plagiarism includes skits taken from YouTube or any other sources from the Internet.</li>
+          <li>Decision of the judges will be final and cannot be appealed.</li>
       </ul>
       );
     },
@@ -714,27 +716,27 @@ export const main_events = [
   {
     event_name: "Arang",
     event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/images/sanskriti-logo.png",
+    event_image: "/Arang/Group/",
     event_link: "/arang"
   },
   {
     event_name: "Alai",
     event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/images/sanskriti-logo.png",
+    event_image: "/Arang/Group/",
   },
   {
     event_name: "ProShow",
     event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/images/sanskriti-logo.png",
+    event_image: "/Arang/Group/",
   },
   {
     event_name: "Jalakam",
     event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/images/sanskriti-logo.png",
+    event_image: "/Arang/Group/",
   },
   {
     event_name: "Drishyam",
     event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/images/sanskriti-logo.png",
+    event_image: "/Arang/Group/",
   },
 ]
