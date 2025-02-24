@@ -43,7 +43,11 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
 
   // MACEian and Non-MACEian Modal
   const [ isModalOpen, setIsModalOpen ] = useState(false)
-  const [ link, setLink ] = useState("")
+  const [link, setLink] = useState({
+    non_mace_link: "",
+    mace_link: ""
+  });
+
 
   return (
     <>
@@ -123,7 +127,10 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
                     layoutId={`button-${active.title}-${active.id}`}
                     onClick={() => {
                       setIsModalOpen(true)
-                      setLink(active.ctaLink)
+                      setLink({
+                        non_mace_link: active.non_mace_link,
+                        mace_link: active.mace_link,
+                      })
                     }}
                     className="px-4 py-3 text-sm rounded-full font-bold bg-primary text-black"
                   >
@@ -213,7 +220,8 @@ export function ExpandableCardArang({events} : {events : Events[]}) {
       <Modal 
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)}
-        link={link}       
+        non_mace_link={link.non_mace_link} 
+        mace_link={link.mace_link}      
       />
     </>
   );

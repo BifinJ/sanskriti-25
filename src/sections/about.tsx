@@ -11,94 +11,94 @@ export default function About() {
 export const products = [
   {
     title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "Cursor",
-    link: "https://cursor.so",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "Rogue",
-    link: "https://userogue.com",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
  
   {
     title: "Editorially",
-    link: "https://editorially.org",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "Editrix AI",
-    link: "https://editrix.ai",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
  
   {
     title: "Algochurn",
-    link: "https://algochurn.com",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
  
   {
     title: "Creme Digital",
-    link: "https://cremedigital.com",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "Invoker Labs",
-    link: "https://invoker.lol",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },
   {
     title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    link: "",
     thumbnail:
       "/images/sanskriti-logo.png",
   },

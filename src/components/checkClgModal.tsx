@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  link: string;
+  non_mace_link: string;
+  mace_link: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, link}) => {
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose, non_mace_link, mace_link}) => {
   if (!isOpen) return null;
 
   return (
@@ -19,10 +20,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, link}) => {
       >
         <h2 className="text-lg font-semibold mb-4">Are you a MACEian?</h2>
         <div className="flex gap-4 justify-center">
-          <a href="/pages/forms" onClick={onClose} className="px-4 py-2 bg-blue-600 text-white rounded">
-            MACEian
+          <a href={mace_link} onClick={onClose} className="px-4 py-2 bg-blue-600 text-white rounded">
+            MACEian <br /><span className=" text-sm">Use college mail id</span>
           </a>
-          <a href={link} onClick={onClose} className="px-4 py-2 bg-gray-600 text-white rounded">
+          <a href={non_mace_link} onClick={onClose} className="px-4 py-2 bg-gray-600 text-white rounded">
             Non-MACEian
           </a>
         </div>

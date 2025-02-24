@@ -7,7 +7,8 @@ export interface Events {
   reg_fees: string;
   src: string;
   ctaText: string;
-  ctaLink: string;
+  non_mace_link: string;
+  mace_link: "";
   content: () => JSX.Element;
 }
 
@@ -19,7 +20,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 150/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://github.com/",
+    non_mace_link: "https://github.com/",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -39,7 +41,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 150/-",
     src: "/Arang/Individual/bharathanatyam.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -60,7 +63,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/extempore_malayalam.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -82,7 +86,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/extempore_english.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -104,7 +109,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 150/-",
     src: "/Arang/Individual/kuchipudi.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -124,7 +130,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/light_music.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -147,7 +154,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/shastryasangeedham.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -169,7 +177,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/Mono_Act.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -188,7 +197,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/anchoring.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -210,7 +220,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/stand_up_comedy.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -229,7 +240,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/western_solo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -250,7 +262,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -271,7 +284,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/recitation-malayalam.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
        <ul>
@@ -292,7 +306,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/drums.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -314,7 +329,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/drums.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -334,7 +350,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/flute.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -366,7 +383,8 @@ export const singleEvents:Events[] = [
     reg_fees: "Rs. 100/-",
     src: "/Arang/Individual/flute.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -399,7 +417,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 600/-",
     src: "/Arang/Group/group_dance.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -423,7 +442,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 800/-",
     src: "/Arang/Group/thiruvathira.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -456,7 +476,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 800/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -478,7 +499,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 600/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -502,7 +524,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 800/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -524,7 +547,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 600/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -547,7 +571,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 600/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -569,7 +594,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 800/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -590,7 +616,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 800/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -611,7 +638,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 600/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -632,7 +660,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 800/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
@@ -659,7 +688,8 @@ export const groupEvents:Events[] = [
     reg_fees: "Rs. 400/-",
     src: "/images/sanskriti-logo.png",
     ctaText: "Register",
-    ctaLink: "https://ui.aceternity.com/templates",
+    non_mace_link: "https://ui.aceternity.com/templates",
+    mace_link: "",
     content: () => {
       return (
         <ul>
