@@ -119,7 +119,7 @@ export const Header = () => {
   return (
     <div className="z-10 absolute flex flex-col items-center justify-center mx-auto py-5 md:py-28 px-4 w-full">
       <div className="max-w-7xl w-full">
-        <h1 className="text-5xl md:text-7xl font-bold dark:text-white">
+        <h1 className="text-5xl md:text-7xl font-bold text-primary">
           About<br />Sanskriti&apos;25
         </h1>
         <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">

@@ -436,6 +436,34 @@ export const groupEvents:Events[] = [
     },
   },
   {
+    id: 12,
+    description: "8K Prize Pool",
+    title: "Group Dance - Semi Classical",
+    reg_fees: "Rs. 800/-",
+    src: "/Arang/Group/semiclassical_group.webp",
+    ctaText: "Register",
+    non_mace_link: "https://forms.gle/5uh7AzGLkrDkRB3F9",
+    mace_link: "https://forms.gle/4NwB9kC1gxoJ1Kc39",
+    content: () => {
+      return (
+        <ul>
+          <li>Participation is open to all engineering colleges.</li>
+          <li>Maximum of 12 members are allowed per team.</li>
+          <li>Time limit: 10 minutes, empty to empty.</li>
+          <li>Props and costumes are allowed.</li>
+          <li>Points will be awarded on the basis of overall performance, which includes acting skills, script, dialogue delivery, presentation, and other factors.</li>
+          <li>Extra points shall be awarded for costumes.</li>
+          <li>Characters can be from any number of movies. Scene elements from other movies can also be included.</li>
+          <li>Character portrayal, twists, and humor carry additional weightage.</li>
+          <li>Backstage narration (live/recorded) is allowed.</li>
+          <li>Background music is permitted.</li>
+          <li>Plagiarism of any sort will lead to immediate disqualification. Plagiarism includes skits taken from YouTube or any other sources from the Internet.</li>
+          <li>Decision of the judges will be final and cannot be appealed.</li>
+      </ul>
+      );
+    },
+  },
+  {
     id: 2,
     description: "8K Prize Pool",
     title: "തിരുവാതിര",
@@ -474,7 +502,7 @@ export const groupEvents:Events[] = [
     description: "8K Prize Pool",
     title: "ഒപ്പന",
     reg_fees: "Rs. 800/-",
-    src: "/Arang/Group/Oppana.jpg",
+    src: "/Arang/Group/oppana1.webp",
     ctaText: "Register",
     non_mace_link: "https://forms.gle/F132Z3xZy15c5afN8",
     mace_link: "https://forms.gle/58ayGfpdUAKyy7vF6",
@@ -497,7 +525,7 @@ export const groupEvents:Events[] = [
     description: "6K Prize Pool",
     title: "Sangagaanam",
     reg_fees: "Rs. 600/-",
-    src: "/Arang/Group/group_song.jpg",
+    src: "/Arang/Group/group_song1.webp",
     ctaText: "Register",
     non_mace_link: "https://forms.gle/nqhdwWfGKcGU86TEA",
     mace_link: "https://forms.gle/wHX1b2AAiuMJMWfJ7",
@@ -545,7 +573,7 @@ export const groupEvents:Events[] = [
     description: "6K Prize Pool",
     title: "നടൻപാട്ട്",
     reg_fees: "Rs. 600/-",
-    src: "/Arang/Group/",
+    src: "/Arang/Group/nadanpattu.webp",
     ctaText: "Register",
     non_mace_link: "https://forms.gle/HZKvepAnsaBnrCTJ9",
     mace_link: "https://forms.gle/XxGjcquLikkkbgP38",
@@ -681,34 +709,6 @@ export const groupEvents:Events[] = [
       );
     },
   },
-  {
-    id: 12,
-    description: "8K Prize Pool",
-    title: "Group Dance - Semi Classical",
-    reg_fees: "Rs. 800/-",
-    src: "/Arang/Group/",
-    ctaText: "Register",
-    non_mace_link: "https://forms.gle/5uh7AzGLkrDkRB3F9",
-    mace_link: "https://forms.gle/4NwB9kC1gxoJ1Kc39",
-    content: () => {
-      return (
-        <ul>
-          <li>Participation is open to all engineering colleges.</li>
-          <li>Maximum of 12 members are allowed per team.</li>
-          <li>Time limit: 10 minutes, empty to empty.</li>
-          <li>Props and costumes are allowed.</li>
-          <li>Points will be awarded on the basis of overall performance, which includes acting skills, script, dialogue delivery, presentation, and other factors.</li>
-          <li>Extra points shall be awarded for costumes.</li>
-          <li>Characters can be from any number of movies. Scene elements from other movies can also be included.</li>
-          <li>Character portrayal, twists, and humor carry additional weightage.</li>
-          <li>Backstage narration (live/recorded) is allowed.</li>
-          <li>Background music is permitted.</li>
-          <li>Plagiarism of any sort will lead to immediate disqualification. Plagiarism includes skits taken from YouTube or any other sources from the Internet.</li>
-          <li>Decision of the judges will be final and cannot be appealed.</li>
-      </ul>
-      );
-    },
-  },
 ];
 
 
@@ -716,27 +716,27 @@ export const main_events = [
   {
     event_name: "Arang",
     event_description: "Step into the vibrant world of Arangu, where art knows no bounds. This VIBRANT EXTRAVAGANZA celebrates the perfect blend of traditional and contemporary art forms. Imagine a rich tapestry of music, dance, theater, and visual arts, woven together to create an unforgettable experience. From classical performances that showcase our cultural heritage to modern masterpieces that push the boundaries of creativity, Arangu is a true celebration of artistic expression. Experience the magic of Arangu, where tradition and innovation converge. This spectacular event brings together the best of classical and contemporary art forms, creating a unique and unforgettable experience. Witness the timeless beauty of traditional music, dance, and theater, alongside modern masterpieces that showcase the latest trends and innovations. With its diverse range of performances and exhibitions, Arangu is a true celebration of artistic excellence and creativity.",
-    event_image: "/images/sanskriti-logo.png",
+    event_image: "/images/sanskriti-white.png",
     event_link: "/arang"
   },
   {
     event_name: "Alai",
     event_description: "Step into the enchanting realm of Alai, where creativity flows like waves, blending diverse artistic expressions into a vibrant celebration. More than just an event, Alai is a source of artistic inspiration, featuring everything from mesmerizing paintings to captivating performances that push creative boundaries. The Alai Shows provide an intimate platform for talent, connecting emerging and seasoned artists while redefining artistic exploration. Adding to its unique charm, The Alai Flea—a seaside thrift market—offers a treasure trove of affordable finds, premium stalls, and delectable treats. Alai stands as a tribute to the beauty of art and thrift culture—join us to ride the waves of creativity and uncover hidden talents!",
-    event_image: "/images/sanskriti-logo.png",
+    event_image: "/images/sanskriti-white.png",
   },
   {
     event_name: "ProShow",
-    event_description: "Event description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus minima eos voluptatibus quidem quo quibusdam! Accusamus unde numquam incidunt exercitationem sapiente quo facere illum rem reiciendis sunt, nobis alias ab, omnis ipsum dignissimos, sint vel vero earum. Obcaecati incidunt cumque, sequi quasi corporis iure nostrum error fuga dignissimos molestias delectus nemo quam consequuntur molestiae provident a officia sit. Perferendis vitae, illum iure, unde consectetur blanditiis ipsa maxime optio voluptatum dolorum architecto voluptatibus ratione saepe doloremque explicabo eius asperiores fugit!",
-    event_image: "/images/sanskriti-logo.png",
+    event_description: "Step into the Spotlight at Sanskriti’25 – A Symphony of Art At Sanskriti’25, Proshows weave music, dance, and storytelling into a breathtaking spectacle. Past, present, and future merge in an unforgettable celebration of creativity and passion. Experience soul-stirring melodies, mesmerizing dance, and electrifying performances that ignite the stage. Each act is a masterpiece, capturing the essence of artistic brilliance and boundless energy. More than just a show, the Proshows at Sanskriti’25 are a journey through rhythm, movement, and expression. Step into this dream where every beat and movement becomes art.",
+    event_image: "/images/sanskriti-white.png",
   },
   {
     event_name: "Jalakam",
     event_description: "Sanskriti is a celebration of art, passion, and togetherness, and Jaalakam is where its purest form comes to life. A space where creativity knows no bounds, Jaalakam brings forth talents that inspire and stories that touch the heart. It is a tribute to those whose spirit and joy make them special from others. This year, as they step onto the stage of Sanskriti, they remind us that art is not just about talent but about connection, about seeing the beauty in every smile, every moment, and every soul.",
-    event_image: "/images/sanskriti-logo.png",
+    event_image: "/images/sanskriti-white.png",
   },
   {
     event_name: "Drishyam",
     event_description: "Step into the world of cinema at Sanskriti'25, where Drishyam serves as a time capsule, preserving moments through the magic of film. From the nostalgia of monochrome classics to the vibrancy of contemporary storytelling and the possibilities of the future, Drishyam showcases the power of film to capture cultural snapshots across time. Watch as storytellers bridge generations, using black-and-white frames to honor the past, embrace the present, and envision the future. More than just a film festival, Drishyam is a living archive—an immersive journey through history, the present moment, and the endless possibilities ahead.",
-    event_image: "/images/sanskriti-logo.png",
+    event_image: "/images/sanskriti-white.png",
   },
 ]
