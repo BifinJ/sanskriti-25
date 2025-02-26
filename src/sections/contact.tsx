@@ -5,10 +5,10 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const ContactPage: React.FC = () => {
   const contactPersons = [
-    { name: "John Doe", phone: "+1234567890" },
-    { name: "Jane Smith", phone: "+1234567891" },
-    { name: "Robert Johnson", phone: "+1234567892" },
-    { name: "Emily Brown", phone: "+1234567893" }
+    { name: "Akash Jinish(Sanskriti Head)", phone: "+919072739035" },
+    { name: "Parvathy Gopan(Sanskriti Head)", phone: "+918129179168" },
+    { name: "Gautham P B", phone: "+918590394832" },
+    { name: "Suryalakshmi U S", phone: "+918075897278" }
   ];
 
   const socialMedia = [
