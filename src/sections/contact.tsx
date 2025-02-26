@@ -5,10 +5,10 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const ContactPage: React.FC = () => {
   const contactPersons = [
-    { name: "Akash Jinish(Sanskriti Head)", phone: "+919072739035" },
-    { name: "Parvathy Gopan(Sanskriti Head)", phone: "+918129179168" },
-    { name: "Gautham P B(Convenor)", phone: "+918590394832" },
-    { name: "Suryalakshmi U S(Organising Secretary)", phone: "+918075897278" }
+    { name: "Akash Jinish (Sanskriti Head)", phone: "+919072739035" },
+    { name: "Parvathy Gopan (Sanskriti Head)", phone: "+918129179168" },
+    { name: "Goutham P B (Convenor)", phone: "+918590394832" },
+    { name: "Suryalakshmi U S (Organising Secretary)", phone: "+918075897278" }
   ];
 
   const socialMedia = [
