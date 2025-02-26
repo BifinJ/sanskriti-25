@@ -413,7 +413,7 @@ export const groupEvents:Events[] = [
   {
     id: 1,
     description: "6K Prize Pool",
-    title: "Group Dance Cenematic",
+    title: "Group Dance Cinematic ",
     reg_fees: "Rs. 600/-",
     src: "/Arang/Group/group_dance.png",
     ctaText: "Register",
