@@ -16,9 +16,9 @@ const FAQ = () => {
   };
 
   return (
-    <section className="bg-neutral-800 p-16">
+    <section className="bg-neutral-800 p-8">
     <h2 className="section-heading !text-primary mb-4">FAQ</h2>
-      <div className="max-w-4xl mx-auto p-8 bg-neutral-800 rounded-lg shadow-md">
+      <div className="w-full md:w-3/4 mx-auto bg-neutral-800 rounded-lg shadow-md">
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div
