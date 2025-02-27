@@ -16,7 +16,7 @@ export default function Arang() {
     <section className="overflow-hidden w-full relative p-2 sm:p-10 md:p-20 bg-neutral-800 flex flex-col items-center justify-center">
       <h1 className="z-10 section-heading !text-center lg:!text-left mb-3 !text-primary w-full max-w-7xl">Arang</h1>
       <div className="p-6 md:p-10 bg-gray-700 mb-3 rounded-lg">
-        <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">Arang'25 GENERAL GUIDELINES</h3>
+        <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">Arang&apos;25 GENERAL GUIDELINES</h3>
         <ul className="list-decimal list-inside space-y-2 text-secondary">
           <li>Participation is open for all engineering colleges. Everyone should bring the ID card of their respective colleges.</li>
           <li>Both house-wise and individual participation are allowed.</li>
