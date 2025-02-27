@@ -40,7 +40,7 @@ export default function Events() {
               exit={{ scale: 0.85 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
               viewport={{ once: false, amount: 0.5 }}
-              className="bg-neutral-900 overflow-y-hidden w-full"
+              className="bg-neutral-900 overflow-y-hidden w-full rounded-xl"
             >
               <div
                 className={`flex flex-col ${index % 2 == 0 ? "md:flex-row": "md:flex-row-reverse"} items-center h-fit md:h-[350px] bg-neutral-700 p-2 md:p-16`}
