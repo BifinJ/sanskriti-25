@@ -6,7 +6,7 @@ const competitions = [
   {
     id: 2,
     title: 'Band War',
-    image: '/inter/bandwar.jpg',
+    image: '/inter/Bandwar.jpg',
     description: `The guitars are roaring, the drums are thundering, and the battle is about to erupt! **BANDWAR**, the fiercest showdown of **SANSKRITI’25**, presented by **MACE Music Club**, brings top bands together for an all-out musical war 💥. With electrifying solos 🎸, powerhouse vocals 🎤, and heart-pounding beats 🥁, only one will own the stage!  
 
 📍 **Venue:** OAT  
@@ -42,7 +42,7 @@ const competitions = [
   {
     id: 3,
     title: 'Choreonight',
-    image: '/inter/choreonight.jpg',
+    image: '/inter/Choreonight.jpg',
     description: `The stage is set, the beats are pumping, and the battle is on! **CHOREONIGHT**, presented by **MAD_C - MACE Dance Club**, brings the best dance crews 💥 to compete with jaw-dropping stunts 🤸, powerful moves 💃, and unmatched energy 🔥. From hip-hop 🎧 to contemporary 🌊, every team is ready to own the night! 🏆  
 
 📍 **Venue:** OAT  
