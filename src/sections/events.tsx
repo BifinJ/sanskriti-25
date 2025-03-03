@@ -73,7 +73,7 @@ export default function Events() {
                   >
                     {event.event_description}
                   </motion.p>
-                  {index == 0 ?
+                  {event.event_link ?
                     (<a
                       href={event.event_link}
                       className="w-fit text-neutral-900 border border-primary px-4 py-2 rounded-lg transition-all duration-300 bg-primary hover:bg-neutral-900 hover:text-primary"

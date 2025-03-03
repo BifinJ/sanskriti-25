@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import About from "@/sections/about";
+import Competitions from "@/sections/competitions";
 import ContactPage from "@/sections/contact";
 import Events from "@/sections/events";
 import FAQ from "@/sections/faq";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Events />
+      <Competitions />
       <ContactPage />
       <FAQ />
       <Footer />
