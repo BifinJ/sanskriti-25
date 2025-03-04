@@ -19,7 +19,7 @@ const competitions = [
       { name: 'Rohit', phone: '+91 9074590802' },
     ],
     registrationLink: 'https://forms.gle/kS8VjWBzZnw5g1eq5',
-    fee: '₹250 per head'
+    fee: '₹250/- per head'
   },
   {
     id: 1,
@@ -37,7 +37,7 @@ const competitions = [
       { name: 'Ayisha', phone: '+91 8137003124' },
     ],
     registrationLink: 'https://forms.gle/9oPnCpLdGxmCwR4b9',
-    fee: '₹2500'
+    fee: '₹2500/-'
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const competitions = [
       { name: 'Asim', phone: '+91 9400619084' },
     ],
     registrationLink: 'https://forms.gle/aodjp1HM2VqJdTqi6',
-    fee: '₹250 per head'
+    fee: '₹3000/-'
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Competitions() {
         {competitions.map((competition) => (
           <motion.div 
             key={competition.id} 
-            className="bg-neutral-900 rounded-lg shadow-lg p-5 w-[400px] h-full flex flex-col items-stretch"
+            className="bg-neutral-900 rounded-lg shadow-lg p-5 w-[320px] sm:w-[400px] h-full flex flex-col items-stretch"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
