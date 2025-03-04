@@ -10,8 +10,7 @@ const competitions = [
     description: `The guitars are roaring, the drums are thundering, and the battle is about to erupt! **BANDWAR**, the fiercest showdown of **SANSKRITI’25**, presented by **MACE Music Club**, brings top bands together for an all-out musical war 💥. With electrifying solos 🎸, powerhouse vocals 🎤, and heart-pounding beats 🥁, only one will own the stage!  
 
 📍 **Venue:** OAT  
-📅 **Date:** 08-03-2025  
-⏰ **Time:** 7 PM – 10 PM  
+📅 **Date:** 08-03-2025 
 
 🔥 Grab your spot, scream loud, and witness the madness of BANDWAR! 🎶🎸 Let the music do the talking and the stage set ablaze! 🎉🎤`,
     contact: [
@@ -29,7 +28,6 @@ const competitions = [
 
     📍 **Venue:** OAT  
     📅 **Date:** 06-03-2025  
-    ⏰ **Time:** 7 PM – 8:30 PM  
 
     🔥 Walk the ramp. Command the spotlight. Own the night! Whether you're serving avant-garde looks or redefining elegance, this is your moment to shine! The runway awaits—are you ready to turn heads and steal the show? 👑✨`,
     contact: [
@@ -46,13 +44,12 @@ const competitions = [
     description: `The stage is set, the beats are pumping, and the battle is on! **CHOREONIGHT**, presented by **MAD_C - MACE Dance Club**, brings the best dance crews 💥 to compete with jaw-dropping stunts 🤸, powerful moves 💃, and unmatched energy 🔥. From hip-hop 🎧 to contemporary 🌊, every team is ready to own the night! 🏆  
 
 📍 **Venue:** OAT  
-📅 **Date:** 06-03-2025  
-⏰ **Time:** 8:30 PM – 9:30 PM  
+📅 **Date:** 06-03-2025 
 
 ⏳ Be there, cheer loud, and witness the madness of CHOREONIGHT! 🎶🔥🎉`,
     contact: [
-      { name: 'Shehzeen', phone: '+91 8075398165' },
-      { name: 'Asim', phone: '+91 9400619084' },
+      { name: 'Devaganga', phone: '+91 7356977540' },
+      { name: 'Abin', phone: '+91 9074295318' },
     ],
     registrationLink: 'https://forms.gle/aodjp1HM2VqJdTqi6',
     fee: '₹3000/-'
